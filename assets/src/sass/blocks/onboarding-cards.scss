@@ -1,0 +1,16 @@
+.card-feature {
+    background: rgba(67, 95, 93, 0.4); 
+
+    border-radius: 6%;
+    border: 1px solid rgba(67, 95, 93, 0.56);
+  
+    img, svg {
+
+        max-width: 25%;
+        @media (min-width:768px){
+        max-width: 50%;
+        }
+
+    }
+
+}

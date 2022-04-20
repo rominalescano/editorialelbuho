@@ -1,0 +1,61 @@
+@import "../bonusbank/colors.scss";
+.et-db #et-boc .et-l .et_pb_module a {
+    color: $primary!important;
+}
+
+.et-db #et-boc .et-l .et_pb_divider:before {
+    border-top-color: $primary!important;
+}
+
+.et_pb_toggle_open, .et_pb_toggle_close {
+    background: transparent!important;
+}
+.et_pb_toggle_title {
+    color: white!important;
+}
+
+.et_pb_module h1 *, .et_pb_module h2 *, .et_pb_module h3 *, .et_pb_module h4 *, .et_pb_module h5 *, .et_pb_module h6 * { 
+    color: $primary!important;
+}
+
+pre {
+    color: white!important; 
+}
+
+.et_pb_row {   
+    max-width: none!important;    
+}
+
+.et_pb_image_wrap {
+    img {
+        width: 100%!important;
+    }
+}
+
+.et-db #et-boc .et-l .et_pb_module h1, 
+.et-db #et-boc .et-l .et_pb_module h2, 
+.et-db #et-boc .et-l .et_pb_module h3 {
+    font-size: 22px!important;
+    text-transform: uppercase;
+}
+.et-db #et-boc .et-l .et_pb_module h4 {
+    font-size: 20px!important;
+    text-transform: uppercase;
+}
+ .et-db #et-boc .et-l .et_pb_module h5 {
+    font-size: 19px!important;
+    text-transform: uppercase;
+ }
+ .et-db #et-boc .et-l .et_pb_module h6 {
+     font-size: 18px!important;
+     text-transform: uppercase;
+ }
+ 
+ .et_pb_text_inner {
+     p, span, ul {
+         line-height: 1.5rem;
+         letter-spacing: 0.01rem;
+         font-weight: 100;
+         font-size: 1rem!important;
+     }
+ }

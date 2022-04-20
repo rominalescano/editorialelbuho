@@ -1,0 +1,519 @@
+@import "../bonusbank/colors.scss";
+
+//Home Memmberpress
+.mepr-account-table {
+
+        background: rgba(67, 95, 93, 0.5)!important;
+
+        tr {
+            border: none!important;
+        }
+        tbody {
+            tr {
+                td {
+                    border-left: none!important;  
+                    border-right: 1.5px solid #435F5D!important;    
+                    padding: 0.75rem!important; 
+                }
+            }
+            
+        }  
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid rgba(67, 95, 93, 0.56)!important;
+
+        th {
+            padding: 0.75rem!important;
+            font-size: 18px;
+            border-bottom: 2px solid rgba(67, 95, 93, 0.4)!important;
+        }
+
+        thead{
+            tr { 
+                background-color: rgba(0, 0, 0, 0.05)!important;
+        
+                td{
+
+                  
+                    border-top: 1px solid rgba(67, 95, 93, 0.4)!important;
+                    border-left: 1.5px solid #435F5D!important;
+                    border-right: 1.5px solid #435F5D!important;
+
+                    input::placeholder {
+                        font-size: 14px!important; 
+                        font-family: "Poppins", sans-serif;
+                        }
+                    input {
+                        font-size: 14px; 
+                        font-family: "Poppins", sans-serif;
+                    }
+
+                }
+        
+            }
+        }
+
+        .mepr-alt-row{
+        background-color: rgba(42, 48, 56, 0.5)!important;
+        
+        }
+
+        .mepr-account-subscr-id, .mepr-account-rebill, .mepr-account-terms{
+            color: rgba( white, 0.9);
+        }
+
+        .mepr-inactive{
+            color: rgba( #ff0808, 0.9);
+            font-weight: 100;
+        }
+
+        .mepr-active{
+            //color: rgba( #ff0808, 0.9);
+            font-weight: 100;
+        } 
+
+        .mepr-account-actions a:not(.hideit) {
+            margin: 5px;
+            background: $primary;
+            padding: 5px;
+            border-radius: 2px;
+            color: #fff;
+            display: inline-block;
+
+            // &.call-modall {
+            //     display: none;
+            // }
+        }
+
+    
+}
+
+.mepr_updated {
+    background-color: rgba(45, 159, 77,0.5)!important;
+}
+
+// Courses
+
+.user-progress {
+    color: black;
+}
+
+.mp_wrapper .grid {
+      max-width: 80%;
+}
+
+.grid-pad {
+    text-align: end;
+}
+
+// Chamge Password
+
+.mepr-newpassword-form{
+    @media(min-width: 769px) {
+        width: 82%;
+        margin-left: 125px;
+    }
+}
+
+//Titles Memberpress
+.title-memberpress{
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    border: 2px solid rgba(67, 95, 93, 0.56);
+}
+
+
+.mp_wrapper form {
+    
+    @media(min-width: 769px) {
+        padding: 60px;
+    }
+
+    .mp-form-row{
+        .invalid{    
+            background-color: #f8d7da!important;
+            border-color: #f5c6cb!important;
+            a {
+                color: #721c24!important;
+            }
+        }
+    }
+
+    .mepr-form-has-errors{
+        background-color: #f8d7da!important;
+        color: #721c24!important;
+       
+    }
+}
+
+
+
+.mp_wrapper .mp-form-row {
+    margin-bottom: 30px;
+}
+
+.mp_wrapper input[type=text] {
+padding: 5px!important;
+}
+
+.mp_wrapper input[type=password] {
+    padding: 5px!important;
+}
+
+.button.mp-hide-pw {
+    padding: 8px;
+}
+
+.button.mp-hide-pw:hover {
+    padding: 8px;
+}
+
+#mepr_loginform{
+    .button.mp-hide-pw {
+       display: none;
+    }  
+
+    .mepr_password {
+        margin-bottom: 70px!important;
+    }
+}
+
+
+
+.mp-form-submit, .mp_payment_form_wrapper, .mepr-newpassword-form {
+    .mepr-submit, .new-password-submit {
+    background-color: $primary;  
+    color: #ffff;
+    border-color: $primary;
+    border-radius: 2px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    &:hover{
+        background-color: #2d9f4d;
+        border-color: #2a9548; 
+           }
+    }
+}
+
+
+
+//Sidebar Memberpress
+.widget_text {
+
+    margin-top: 1.5rem;
+}
+
+
+//
+
+.mepr-price-box{
+    background: rgba(67, 95, 93, 0.5);
+    border-radius: 2%!important;
+    border: 1px solid rgba(67, 95, 93, 0.56)!important;
+    padding: 1.5rem!important;
+}
+
+.mepr-price-box-button {
+    border: solid 1px $primary;
+    a {
+        color: $white!important;
+    }
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0px!important;
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}
+
+
+.mepr-price-box-title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.mepr-price-box-price {
+    line-height: 3.22rem;
+    font-weight: 600;
+    color: $primary !important;
+    font-size: 1.72rem;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.mepr-price-box-benefits {
+    border-top: 0!important;
+}
+
+
+.mepr-price-box-benefits-list {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;;
+    font-size: 0.88rem;
+    text-align: left;
+}
+
+.mepr-price-menu {
+    margin-top: 5rem!important;
+    margin-bottom: 5rem!important;
+}
+
+//Account Memberpress
+
+.card-home {
+
+    input[type=text] {
+        width: 100%; 
+        margin-bottom: 25px;
+    }
+    input[type=email] {
+        width: 100%; 
+        margin-bottom: 25px;
+    }
+    input[type=submit] {
+        width: 40%;
+        margin-bottom: 25px;
+        background-color: $primary;  
+        color: #ffff;
+        border-color: $primary;
+        border-radius: 2px;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        &:hover{
+            background-color: #2d9f4d;
+            border-color: #2a9548; 
+               }
+        }
+    
+}
+
+.mepr-active-nav-tab{
+    a{
+        background-color: $primary;
+        font-weight: 100 !important;
+    }
+}
+
+// modal 
+.mfp-wrap {
+    .mepr-btn {
+        color: #fff;
+        border: 0px!important;
+        &.mepr-confirm-yes, &.mepr-upgrade-buy-now {
+            background-color: $primary;
+            &:hover {
+                background-color: #70e190!important;
+            }
+        }
+        &.mepr-confirm-no, &.mepr-upgrade-cancel {
+            background-color: $back;
+            &:hover {
+                background-color: #e25967!important;
+            }
+        }
+    }
+}
+
+.mepr-cancel-sub-text {
+    color: #000;
+}
+
+.page-id-111{
+	.hideit{
+		display: none;
+	}
+	.modal {
+		display: none;
+	}
+	
+	.modal.is-open {
+		display: block;
+	}
+
+	/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+	font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  }
+  
+  .modal__overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .modal__container {
+	background-color: #fff;
+	padding: 30px;
+	max-width: 75%;
+    max-height: 60vh;
+	border-radius: 4px;
+	overflow-y: auto;
+	box-sizing: border-box;
+	position: absolute;
+    top: 15vh;
+  }
+  
+  .modal__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .modal__title {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 600;
+	font-size: 1.25rem;
+	line-height: 1.25;
+	color: #00449e;
+	box-sizing: border-box;
+  }
+  
+  .modal__close {
+	background: gray;
+	border: 0;
+  }
+  
+  .modal__header .modal__close:before { content: "\2715"; }
+  
+  .modal__content {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	line-height: 1.5;
+	color: rgba(0,0,0,.8);
+  }
+  
+  .modal__btn {
+	font-size: .875rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	background-color: #e6e6e6;
+	color: rgba(0,0,0,.8);
+	border-radius: .25rem;
+	border-style: none;
+	border-width: 0;
+	cursor: pointer;
+	-webkit-appearance: button;
+	text-transform: none;
+	overflow: visible;
+	line-height: 1.15;
+	margin: 0;
+	will-change: transform;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	transition: -webkit-transform .25s ease-out;
+	transition: transform .25s ease-out;
+	transition: transform .25s ease-out,-webkit-transform .25s ease-out;
+  }
+  
+  .modal__btn:focus, .modal__btn:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+  }
+  
+  .modal__btn-primary {
+	background-color: #00449e;
+	color: #fff;
+  }
+  
+  .mepr_error {
+      background: red!important;
+      border: 1px solid white!important;
+  }
+  
+  /**************************\
+	Demo Animation Style
+  \**************************/
+  @keyframes mmfadeIn {
+	  from { opacity: 0; }
+		to { opacity: 1; }
+  }
+  
+  @keyframes mmfadeOut {
+	  from { opacity: 1; }
+		to { opacity: 0; }
+  }
+  
+  @keyframes mmslideIn {
+	from { transform: translateY(15%); }
+	  to { transform: translateY(0); }
+  }
+  
+  @keyframes mmslideOut {
+	  from { transform: translateY(0); }
+	  to { transform: translateY(-10%); }
+  }
+  
+  .micromodal-slide {
+	display: none;
+  }
+  
+  .micromodal-slide.is-open {
+	display: block;
+  }
+  
+  .micromodal-slide[aria-hidden="false"] .modal__overlay {
+	animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="false"] .modal__container {
+	animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="true"] .modal__overlay {
+	animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+  }
+  
+  .micromodal-slide[aria-hidden="true"] .modal__container {
+	animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .micromodal-slide .modal__container,
+  .micromodal-slide .modal__overlay {
+	will-change: transform;
+  }
+
+  .basic-answer {
+      list-style: none;
+      input {
+        margin-right: 5px;
+      } 
+  }
+}

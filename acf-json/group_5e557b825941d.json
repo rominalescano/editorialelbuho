@@ -1,0 +1,1328 @@
+{
+    "key": "group_5e557b825941d",
+    "title": "Today's Plays",
+    "fields": [
+        {
+            "key": "field_5e55914564f9a",
+            "label": "Use Custom Fields",
+            "name": "use_custom_fields",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e6c09bcf90ec",
+            "label": "Plays Wrapper",
+            "name": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e55914564f9a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_5e56a9adcec88",
+            "label": "Plays",
+            "name": "plays",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e55914564f9a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Play",
+            "sub_fields": [
+                {
+                    "acfe_flexible_advanced": 0,
+                    "acfe_flexible_stylised_button": 0,
+                    "acfe_flexible_hide_empty_message": 0,
+                    "acfe_flexible_empty_message": "",
+                    "acfe_flexible_disable_ajax_title": 0,
+                    "acfe_flexible_layouts_thumbnails": 0,
+                    "acfe_flexible_layouts_settings": 0,
+                    "acfe_flexible_layouts_ajax": 0,
+                    "acfe_flexible_layouts_templates": 0,
+                    "acfe_flexible_layouts_previews": 0,
+                    "acfe_flexible_layouts_placeholder": 0,
+                    "acfe_flexible_title_edition": 0,
+                    "acfe_flexible_clone": 0,
+                    "acfe_flexible_copy_paste": 0,
+                    "acfe_flexible_close_button": 0,
+                    "acfe_flexible_remove_add_button": 0,
+                    "acfe_flexible_remove_delete_button": 0,
+                    "acfe_flexible_lock": 0,
+                    "acfe_flexible_modal_edition": 0,
+                    "acfe_flexible_modal": {
+                        "acfe_flexible_modal_enabled": false,
+                        "acfe_flexible_modal_title": false,
+                        "acfe_flexible_modal_col": "4",
+                        "acfe_flexible_modal_categories": false
+                    },
+                    "acfe_flexible_layouts_state": "",
+                    "acfe_flexible_layouts_remove_collapse": 0,
+                    "key": "field_5e559dacda2d0",
+                    "label": "Plays Content",
+                    "name": "plays_content",
+                    "type": "flexible_content",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layouts": {
+                        "layout_5e559df0a3389": {
+                            "key": "layout_5e559df0a3389",
+                            "name": "no_draw_game",
+                            "label": "No Draw game",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e7d4f64c3d5c",
+                                    "label": "Hide Posible Bonuses",
+                                    "name": "hide_posible_bonuses",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5e7d4f4b0795d",
+                                    "label": "Hide Notes",
+                                    "name": "hide_notes",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5e559e18da2d1",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5e559e3fda2d2",
+                                    "label": "Team A",
+                                    "name": "team_a",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e559e55da2d3",
+                                            "label": "Team A Image",
+                                            "name": "team_a_image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "30",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "url",
+                                            "preview_size": "medium",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_5e569f4ba253a",
+                                            "label": "Bookie A",
+                                            "name": "bookie_a",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "70",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "table",
+                                            "button_label": "Add Bookie",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e559e80da2d4",
+                                                    "label": "Bookie Name",
+                                                    "name": "bookie_name",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e559e9bda2d5",
+                                                    "label": "Bookie Value",
+                                                    "name": "bookie_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_5e56a0d214ec9",
+                                    "label": "Team B",
+                                    "name": "team_b",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e56a0d214eca",
+                                            "label": "TeamB Image",
+                                            "name": "team_b_image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "30",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "url",
+                                            "preview_size": "medium",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_5e56a0d214ecb",
+                                            "label": "Bookie B",
+                                            "name": "bookie_B",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "70",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "table",
+                                            "button_label": "Add Bookie",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e56a0d214ecc",
+                                                    "label": "Bookie Name",
+                                                    "name": "bookie_name",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e56a0d214ecd",
+                                                    "label": "Bookie Value",
+                                                    "name": "bookie_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_5e55a0e9de654",
+                                    "label": "Outcomes",
+                                    "name": "outcomes",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e55a112de655",
+                                            "label": "Outcome",
+                                            "name": "outcome",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "",
+                                            "button_label": "Add Outcome",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e55a139de656",
+                                                    "label": "Outcome Name",
+                                                    "name": "outcome_name",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e55a1fdde657",
+                                                    "label": "Outcome Value",
+                                                    "name": "outcome_value",
+                                                    "type": "group",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "layout": "block",
+                                                    "sub_fields": [
+                                                        {
+                                                            "key": "field_5e55a298720c4",
+                                                            "label": "Negative",
+                                                            "name": "negative",
+                                                            "type": "true_false",
+                                                            "instructions": "",
+                                                            "required": 0,
+                                                            "conditional_logic": 0,
+                                                            "wrapper": {
+                                                                "width": "50",
+                                                                "class": "",
+                                                                "id": ""
+                                                            },
+                                                            "message": "",
+                                                            "default_value": 0,
+                                                            "ui": 0,
+                                                            "ui_on_text": "",
+                                                            "ui_off_text": ""
+                                                        },
+                                                        {
+                                                            "key": "field_5e55a2cb720c5",
+                                                            "label": "Value",
+                                                            "name": "value",
+                                                            "type": "text",
+                                                            "instructions": "",
+                                                            "required": 0,
+                                                            "conditional_logic": 0,
+                                                            "wrapper": {
+                                                                "width": "50",
+                                                                "class": "",
+                                                                "id": ""
+                                                            },
+                                                            "default_value": "",
+                                                            "placeholder": "",
+                                                            "prepend": "",
+                                                            "append": "",
+                                                            "maxlength": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_5e55a6d7d80e7",
+                                    "label": "Potential Bonuses",
+                                    "name": "potential_bonuses",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5e7d4f64c3d5c",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 4,
+                                    "new_lines": "wpautop"
+                                },
+                                {
+                                    "acfe_flexible_advanced": 0,
+                                    "acfe_flexible_stylised_button": 0,
+                                    "acfe_flexible_hide_empty_message": 0,
+                                    "acfe_flexible_empty_message": "",
+                                    "acfe_flexible_disable_ajax_title": 0,
+                                    "acfe_flexible_layouts_thumbnails": 0,
+                                    "acfe_flexible_layouts_settings": 0,
+                                    "acfe_flexible_layouts_ajax": 0,
+                                    "acfe_flexible_layouts_templates": 0,
+                                    "acfe_flexible_layouts_previews": 0,
+                                    "acfe_flexible_layouts_placeholder": 0,
+                                    "acfe_flexible_title_edition": 0,
+                                    "acfe_flexible_clone": 0,
+                                    "acfe_flexible_copy_paste": 0,
+                                    "acfe_flexible_close_button": 0,
+                                    "acfe_flexible_remove_add_button": 0,
+                                    "acfe_flexible_remove_delete_button": 0,
+                                    "acfe_flexible_lock": 0,
+                                    "acfe_flexible_modal_edition": 0,
+                                    "acfe_flexible_modal": {
+                                        "acfe_flexible_modal_enabled": false,
+                                        "acfe_flexible_modal_title": false,
+                                        "acfe_flexible_modal_col": "4",
+                                        "acfe_flexible_modal_categories": false
+                                    },
+                                    "acfe_flexible_layouts_state": "",
+                                    "acfe_flexible_layouts_remove_collapse": 0,
+                                    "key": "field_5e55a9333971c",
+                                    "label": "Notes",
+                                    "name": "notes",
+                                    "type": "flexible_content",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5e7d4f4b0795d",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layouts": {
+                                        "layout_5e55ad0c9b3e8": {
+                                            "key": "layout_5e55ad0c9b3e8",
+                                            "name": "note",
+                                            "label": "Note",
+                                            "display": "row",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e55ad221e363",
+                                                    "label": "Note",
+                                                    "name": "note_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": "",
+                                            "acfe_flexible_thumbnail": false,
+                                            "acfe_flexible_category": false,
+                                            "acfe_flexible_render_template": false,
+                                            "acfe_flexible_render_style": false,
+                                            "acfe_flexible_render_script": false,
+                                            "acfe_flexible_settings": false,
+                                            "acfe_flexible_settings_size": "medium"
+                                        },
+                                        "layout_5e55ad2c1e364": {
+                                            "key": "layout_5e55ad2c1e364",
+                                            "name": "linked_note",
+                                            "label": "Linked Note",
+                                            "display": "row",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e55ad341e365",
+                                                    "label": "Linked Note",
+                                                    "name": "linked_note_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e55ad5a1e366",
+                                                    "label": "Linked Note URL",
+                                                    "name": "linked_note_url",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": "",
+                                            "acfe_flexible_thumbnail": false,
+                                            "acfe_flexible_category": false,
+                                            "acfe_flexible_render_template": false,
+                                            "acfe_flexible_render_style": false,
+                                            "acfe_flexible_render_script": false,
+                                            "acfe_flexible_settings": false,
+                                            "acfe_flexible_settings_size": "medium"
+                                        }
+                                    },
+                                    "button_label": "Add Note",
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": "",
+                            "acfe_flexible_thumbnail": false,
+                            "acfe_flexible_category": false,
+                            "acfe_flexible_render_template": false,
+                            "acfe_flexible_render_style": false,
+                            "acfe_flexible_render_script": false,
+                            "acfe_flexible_settings": false,
+                            "acfe_flexible_settings_size": "medium"
+                        },
+                        "layout_5e56a454479a3": {
+                            "key": "layout_5e56a454479a3",
+                            "name": "draw_game",
+                            "label": "Draw game",
+                            "display": "row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5e7d5eec1a988",
+                                    "label": "Hide Notes",
+                                    "name": "hide_notes",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5e7d5f5508e34",
+                                    "label": "Hide Posible Bonuses",
+                                    "name": "hide_posible_bonuses",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5e56a454479a4",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5e56a454479a5",
+                                    "label": "Team A",
+                                    "name": "team_a",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e56a454479a6",
+                                            "label": "Team A Image",
+                                            "name": "team_a_image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "30",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "url",
+                                            "preview_size": "medium",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_5e56a454479a7",
+                                            "label": "Bookie A",
+                                            "name": "bookie_a",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "70",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "table",
+                                            "button_label": "Add Bookie",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e56a454479a8",
+                                                    "label": "Bookie Name",
+                                                    "name": "bookie_name",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e56a454479a9",
+                                                    "label": "Bookie Value",
+                                                    "name": "bookie_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_5e56a454479aa",
+                                    "label": "Draw",
+                                    "name": "draw",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "collapsed": "",
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "block",
+                                    "button_label": "Add Draw Bookie",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e56a454479ab",
+                                            "label": "Draw Name",
+                                            "name": "draw_name",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        },
+                                        {
+                                            "key": "field_5e56a454479ac",
+                                            "label": "Draw Value",
+                                            "name": "draw_value",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "50",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "default_value": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "maxlength": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_5e56a454479ad",
+                                    "label": "Team B",
+                                    "name": "team_b",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "table",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e56a454479ae",
+                                            "label": "TeamB Image",
+                                            "name": "team_b_image",
+                                            "type": "image",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "30",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "return_format": "url",
+                                            "preview_size": "medium",
+                                            "library": "all",
+                                            "min_width": "",
+                                            "min_height": "",
+                                            "min_size": "",
+                                            "max_width": "",
+                                            "max_height": "",
+                                            "max_size": "",
+                                            "mime_types": ""
+                                        },
+                                        {
+                                            "key": "field_5e56a454479af",
+                                            "label": "Bookie B",
+                                            "name": "bookie_B",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "70",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "table",
+                                            "button_label": "Add Bookie",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e56a454479b0",
+                                                    "label": "Bookie Name",
+                                                    "name": "bookie_name",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e56a454479b1",
+                                                    "label": "Bookie Value",
+                                                    "name": "bookie_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "50",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_5e56a454479b2",
+                                    "label": "Outcomes",
+                                    "name": "outcomes",
+                                    "type": "group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layout": "block",
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_5e56a454479b3",
+                                            "label": "Outcome",
+                                            "name": "outcome",
+                                            "type": "repeater",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "collapsed": "",
+                                            "min": 0,
+                                            "max": 0,
+                                            "layout": "table",
+                                            "button_label": "Add Outcome",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e56a454479b4",
+                                                    "label": "Outcome Name",
+                                                    "name": "outcome_name",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e56a454479b5",
+                                                    "label": "Outcome Value",
+                                                    "name": "outcome_value",
+                                                    "type": "group",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "layout": "block",
+                                                    "sub_fields": [
+                                                        {
+                                                            "key": "field_5e56a454479b6",
+                                                            "label": "Negative",
+                                                            "name": "negative",
+                                                            "type": "true_false",
+                                                            "instructions": "",
+                                                            "required": 0,
+                                                            "conditional_logic": 0,
+                                                            "wrapper": {
+                                                                "width": "50",
+                                                                "class": "",
+                                                                "id": ""
+                                                            },
+                                                            "message": "",
+                                                            "default_value": 0,
+                                                            "ui": 0,
+                                                            "ui_on_text": "",
+                                                            "ui_off_text": ""
+                                                        },
+                                                        {
+                                                            "key": "field_5e56a454479b7",
+                                                            "label": "Value",
+                                                            "name": "value",
+                                                            "type": "text",
+                                                            "instructions": "",
+                                                            "required": 0,
+                                                            "conditional_logic": 0,
+                                                            "wrapper": {
+                                                                "width": "50",
+                                                                "class": "",
+                                                                "id": ""
+                                                            },
+                                                            "default_value": "",
+                                                            "placeholder": "",
+                                                            "prepend": "",
+                                                            "append": "",
+                                                            "maxlength": ""
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "key": "field_5e56a454479b8",
+                                    "label": "Potential Bonuses",
+                                    "name": "potential_bonuses",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5e7d4f64c3d5c",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 4,
+                                    "new_lines": "wpautop"
+                                },
+                                {
+                                    "acfe_flexible_advanced": 0,
+                                    "acfe_flexible_stylised_button": 0,
+                                    "acfe_flexible_hide_empty_message": 0,
+                                    "acfe_flexible_empty_message": "",
+                                    "acfe_flexible_disable_ajax_title": 0,
+                                    "acfe_flexible_layouts_thumbnails": 0,
+                                    "acfe_flexible_layouts_settings": 0,
+                                    "acfe_flexible_layouts_ajax": 0,
+                                    "acfe_flexible_layouts_templates": 0,
+                                    "acfe_flexible_layouts_previews": 0,
+                                    "acfe_flexible_layouts_placeholder": 0,
+                                    "acfe_flexible_title_edition": 0,
+                                    "acfe_flexible_clone": 0,
+                                    "acfe_flexible_copy_paste": 0,
+                                    "acfe_flexible_close_button": 0,
+                                    "acfe_flexible_remove_add_button": 0,
+                                    "acfe_flexible_remove_delete_button": 0,
+                                    "acfe_flexible_lock": 0,
+                                    "acfe_flexible_modal_edition": 0,
+                                    "acfe_flexible_modal": {
+                                        "acfe_flexible_modal_enabled": false,
+                                        "acfe_flexible_modal_title": false,
+                                        "acfe_flexible_modal_col": "4",
+                                        "acfe_flexible_modal_categories": false
+                                    },
+                                    "acfe_flexible_layouts_state": "",
+                                    "acfe_flexible_layouts_remove_collapse": 0,
+                                    "key": "field_5e56a454479b9",
+                                    "label": "Notes",
+                                    "name": "notes",
+                                    "type": "flexible_content",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5e7d4f4b0795d",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "layouts": {
+                                        "layout_5e55ad0c9b3e8": {
+                                            "key": "layout_5e55ad0c9b3e8",
+                                            "name": "note",
+                                            "label": "Note",
+                                            "display": "row",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e56a454479ba",
+                                                    "label": "Note",
+                                                    "name": "note_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": "",
+                                            "acfe_flexible_thumbnail": false,
+                                            "acfe_flexible_category": false,
+                                            "acfe_flexible_render_template": false,
+                                            "acfe_flexible_render_style": false,
+                                            "acfe_flexible_render_script": false,
+                                            "acfe_flexible_settings": false,
+                                            "acfe_flexible_settings_size": "medium"
+                                        },
+                                        "layout_5e55ad2c1e364": {
+                                            "key": "layout_5e55ad2c1e364",
+                                            "name": "linked_note",
+                                            "label": "Linked Note",
+                                            "display": "row",
+                                            "sub_fields": [
+                                                {
+                                                    "key": "field_5e56a454479bb",
+                                                    "label": "Linked Note",
+                                                    "name": "linked_note_value",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                },
+                                                {
+                                                    "key": "field_5e56a454479bc",
+                                                    "label": "Linked Note URL",
+                                                    "name": "linked_note_url",
+                                                    "type": "text",
+                                                    "instructions": "",
+                                                    "required": 0,
+                                                    "conditional_logic": 0,
+                                                    "wrapper": {
+                                                        "width": "",
+                                                        "class": "",
+                                                        "id": ""
+                                                    },
+                                                    "default_value": "",
+                                                    "placeholder": "",
+                                                    "prepend": "",
+                                                    "append": "",
+                                                    "maxlength": ""
+                                                }
+                                            ],
+                                            "min": "",
+                                            "max": "",
+                                            "acfe_flexible_thumbnail": false,
+                                            "acfe_flexible_category": false,
+                                            "acfe_flexible_render_template": false,
+                                            "acfe_flexible_render_style": false,
+                                            "acfe_flexible_render_script": false,
+                                            "acfe_flexible_settings": false,
+                                            "acfe_flexible_settings_size": "medium"
+                                        }
+                                    },
+                                    "button_label": "Add Note",
+                                    "min": "",
+                                    "max": ""
+                                }
+                            ],
+                            "min": "",
+                            "max": "",
+                            "acfe_flexible_thumbnail": false,
+                            "acfe_flexible_category": false,
+                            "acfe_flexible_render_template": false,
+                            "acfe_flexible_render_style": false,
+                            "acfe_flexible_render_script": false,
+                            "acfe_flexible_settings": false,
+                            "acfe_flexible_settings_size": "medium"
+                        }
+                    },
+                    "button_label": "Select Layout",
+                    "min": "",
+                    "max": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_category",
+                "operator": "==",
+                "value": "category:todays-plays"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1625696034
+}

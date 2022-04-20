@@ -1,0 +1,8 @@
+.block-content-media{
+    padding-top: 100px;
+ }
+
+ /* Main column width */
+.wp-block {
+   max-width: 1600px; 
+}

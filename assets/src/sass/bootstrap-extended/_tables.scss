@@ -1,0 +1,131 @@
+@import "../bonusbank/colors";
+@import "../bootstrap-extended/variables";
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:          .75rem !default;
+$table-cell-padding-sm:       .3rem !default;
+
+// $table-color:                 $body-color !default;
+// $table-bg:                    null !default;
+// $table-accent-bg:             rgba($black, .05) !default;
+// $table-hover-color:           $table-color !default;
+$table-hover-bg:              $primary;
+$table-active-bg:             $primary;
+
+$table-border-width:          1px;
+$table-border-color:          rgba(67, 95, 93, 0.4);
+
+
+$table-head-bg:               transparent;
+$table-head-color:            $body-color;
+$table-th-font-weight:        600;
+
+$table-dark-color:            $body-color;
+$table-dark-bg:               $dark;
+//$table-dark-accent-bg:        rgba($white, .05) !default;
+$table-dark-hover-color:      $primary;
+$table-dark-hover-bg:         rgba($white, .075) !default;
+$table-dark-border-color:     lighten($table-dark-bg, 7.5%) !default;
+
+//$table-striped-order:         odd !default;
+
+//$table-caption-color:         $text-muted !default;
+
+//$table-bg-level:              -9 !default;
+//$table-border-level:          -6 !default;
+
+//custom table
+
+.custom-table {
+
+    .table-hover tbody tr:hover {
+        background-color: transparent;
+        border:solid;
+    }
+
+    &.custom-atm {
+        font-size: 14px; 
+    }
+    font-size: 16px;
+    background: rgba(67, 95, 93, 0.5);
+    border-radius: 8px;
+    border: 1px solid rgba(67, 95, 93, 0.56);
+
+    th {
+        font-size: 18px;
+    }
+
+    thead{
+        tr { 
+            
+            td{
+                .css-1wa3eu0-placeholder {
+                    font-size: 14px; 
+                    font-family: "Poppins", sans-serif;
+                }
+
+                input::placeholder {
+                    font-size: 14px!important; 
+                    font-family: "Poppins", sans-serif;
+                    }
+                input {
+                    font-size: 14px; 
+                    font-family: "Poppins", sans-serif;
+                }
+
+                .dxflwm .DayPickerInput input{
+                    font-size: 14px; 
+                    font-family: "Poppins", sans-serif;
+                }
+            }
+      
+        }
+    }
+
+    tbody{
+        td{
+            border-left: 1.5px solid #435F5D;
+            border-right: 1.5px solid #435F5D;
+        
+        }
+    }
+    .h5-table {
+        font-weight: 600;
+        font-size: 16px; 
+        line-height: 24px;
+    }
+
+    .paginations---table-pagination---41TU- .paginations---table-pagination-block---Cx6IH .paginations---pagination-records---YOUAz{ 
+        color: white!important;
+    }
+    .paginations---table-pagination---41TU- .paginations---table-pagination-block---Cx6IH .paginations---dropdown---1yvIZ .paginations---dropdown-toggle---vMtjL{
+        color: white!important;
+    }
+    .paginations---table-pagination---41TU- .paginations---table-pagination-block---Cx6IH .paginations---pagination-input---2C8oD{
+        color: white!important;
+    }
+
+    .timeZone {
+        
+        border: 1.5px solid #435F5D;
+        border-radius: 4px;
+        min-width: 250px;
+    }
+
+    .Stake {
+        background: white;
+        border: 1.5px solid #435F5D;
+        border-radius: 4px;
+        height: 38px;
+        input{
+            width: 100%;
+            height: 35px;
+        }
+    }
+
+    .clear {
+        background: red;
+    }
+}

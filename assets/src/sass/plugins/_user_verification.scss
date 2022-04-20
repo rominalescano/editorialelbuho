@@ -1,0 +1,17 @@
+@import "../bonusbank/colors.scss";
+
+.check-email-verification {
+    .inner {
+        background: $dark;
+        box-shadow: none;
+    }
+
+    .close {
+        opacity: 1;
+        background: $red;
+        &:hover {
+            color: #fff;
+            background: #f7494d;
+        }
+    }
+}

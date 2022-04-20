@@ -1,0 +1,15 @@
+.block-content-media{
+
+   iframe {
+      width: 100%!important;
+      max-height:  400px;
+   }
+}
+
+.button-content-media {
+   @media(min-width:1024px){
+       min-width: 290px;
+       padding-bottom: 8px;
+       padding-top: 8px;
+   }
+}

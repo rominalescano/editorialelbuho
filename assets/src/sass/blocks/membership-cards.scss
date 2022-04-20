@@ -1,0 +1,84 @@
+@import "../bonusbank/colors.scss";
+@import "slider-theme.scss";
+
+.card-membership {
+    background: rgba(67, 95, 93, 0.5);
+    border-radius: 2%;
+    border: 1px solid rgba(67, 95, 93, 0.56);
+
+    .card-footer {
+        background-color: transparent;
+        border-top: 0;
+    }
+
+    @media(min-width:1024px){
+        .card-header, .card-body, .card-footer {
+            padding: 1.5rem;
+        }
+    }
+
+    ul{
+        li {
+            margin: 20px 0px;
+            font-weight: 400;
+        }
+    }
+  
+}
+ 
+.button-custom {
+    border: solid 1px $primary;
+    color: $white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 0px!important;
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}
+
+.block-membership {
+
+    .slick-list{
+        padding-bottom: 5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+    .slick-track
+    {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .slick-slide { 	
+        height: inherit !important; 	
+        display: flex !important;   	
+        align-items:stretch; 
+        max-width: 330px;
+    }
+
+
+    .tab-content > .tab-pane{
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .tab-content > .active {
+        display: block;
+        height: auto!important;
+    }
+
+}
+
+@media(min-width:1024px){
+
+    .container-memberpress-plans {
+        .slick-slide { 	
+            min-width: 320px;
+        } 
+    }
+}

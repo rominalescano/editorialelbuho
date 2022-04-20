@@ -1,0 +1,177 @@
+.bg-custom{
+    //background-color: $dark;
+    color: $white;
+    //min-height: 50vh;
+    position: relative;
+    
+
+    & * {
+        position: relative;
+        
+    }
+    
+    &:before,&:after{
+        position: absolute;
+        content: "";
+        border-radius: 100%;
+        display: block;
+        z-index: -100;
+        
+        
+    }
+
+   
+    &.bg-custom-1{
+        &:before,&:after{
+            height: 400px;
+            width: 400px;
+            filter: blur(200px);
+        }
+
+        &:before{
+            top: -50px;
+            right: 0;
+            background-color: $color2;
+        }
+        &:after{
+            top: 280px;
+            right: -300px;
+            background-color: $color3;   
+        }
+        &.bg-left{
+            &:before{
+                top: -50px;
+                left: 0px;
+                background-color: $color2;
+            }
+            &:after{
+                top: 280px;
+                left: -300px;
+                background-color: $color3;   
+            }
+        }
+        
+    }
+
+    &.bg-custom-2{
+        &:before,&:after{
+            height: 500px;
+            width: 500px;
+            filter: blur(250px);
+        }
+
+        &:before{
+            top: -50px;
+            right: 0;
+            background-color: $color2;
+        }
+        &:after{
+            top: 280px;
+            right: -300px;
+            background-color: $color3;   
+        }
+        &.bg-left{
+            &:before{
+                top: 0px;
+                left: -400px;
+                background-color: $color2;
+            }
+            &:after{
+                top: 280px;
+                left: -550px;
+                background-color: $color3;   
+            }
+        }
+        
+    }
+
+    &.bg-custom-3{
+        &:before,&:after{
+            height: 100px;
+            width: 100px;
+            filter: blur(80px);
+        }
+
+        &:before{
+            top: 300px;
+            right: 300px;
+            background-color: $color1;
+        }
+       
+        &.bg-left{
+            &:before{
+                top: 300px;
+                right: 300px;
+                background-color: $color1;
+            }
+        }
+        
+    }
+
+    &.bg-custom-4{
+        &:before,&:after{
+            height: 650px;
+            width: 650px;
+            filter: blur(250px);
+        }
+
+        &:before{
+            top: -50px;
+            right: 0;
+            background-color: $color1;
+        }
+        &:after{
+            right: -300px;
+            top: 280px;
+            background-color: $color2;   
+        }
+        &.bg-left{
+            &:before{
+                top: 0px;
+                left: -200px;
+                background-color: $color1;
+            }
+            &:after{
+                left: -500px;
+                top: 280px;
+                background-color: $color2;   
+            }
+        }
+        
+    }
+
+    &.bg-custom-5{
+        &:before,&:after{
+            height: 350px;
+            width: 350px;
+            filter: blur(250px);
+        }
+
+        &:before{
+            top: -50px;
+            right: 0;
+            background-color: $color3;
+        }
+        &:after{
+            right: -300px;
+            top: 280px;
+            background-color: $color1;   
+        }
+        &.bg-left{
+            &:before{
+                top: 0px;
+                left: -200px;
+                background-color: $color3;
+            }
+            &:after{
+                left: -500px;
+                top: 280px;
+                background-color: $color1;   
+            }
+        }
+        
+    }
+
+}
+
+

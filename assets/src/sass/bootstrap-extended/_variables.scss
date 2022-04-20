@@ -1,0 +1,70 @@
+@import "../bonusbank/colors";
+$theme-colors: (
+    "primary": $primary,
+    "dark": $dark,
+    "secondary": $secondary,
+    "white": $white,
+);
+
+// $btn-padding-y:  ;
+//$btn-padding-x:  ;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:           $dark; 
+$body-color:        $white;
+
+
+
+$container-max-widths: (
+  sm: 640px,
+  md: 820px,
+  lg: 1100px,
+  xl: 1800px
+) ;
+
+
+// stylelint-disable value-keyword-case
+
+
+$font-family-sans-serif:  'Roboto', sans-serif;
+$font-family-monospace:    'Poppins', sans-serif;
+
+
+//font sizes
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+//headings
+
+$headings-font-family:       $font-family-monospace;
+
+$h1-font-size:                $font-size-base * 2.16;
+$h2-font-size:                $font-size-base * 1.72;
+$h3-font-size:                $font-size-base * 1.33;
+$h4-font-size:                $font-size-base;
+$h5-font-size:                $font-size-base * 0.88;
+$h6-font-size:                $font-size-base * 0.72;
+
+
+
+//navbar
+$navbar-dark-color:                 rgba($white, 1);
+$navbar-dark-hover-color:           $primary;
+$navbar-dark-active-color:          $primary;
+
+
+$navbar-nav-link-padding-x:         1.5rem ;
+
+
+
+
+//buttons
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           2px;
+$btn-border-radius-lg:         2px;
+$btn-border-radius-sm:        2px;
+

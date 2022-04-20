@@ -1,0 +1,36 @@
+@import "../bonusbank/colors";
+
+.primary-menu.fixed-top.effect {
+    background: $background;
+ 
+    -webkit-transition:all 550ms ease;
+    -moz-transition:all 550ms ease;
+    -ms-transition:all 550ms ease;
+    transition:all 550ms ease;
+}
+
+.fixed-top{
+  
+    & + .space {
+        height: 120px;
+
+    }
+}
+
+.space-nav.fixed-top {
+    height: 90px;
+    position: relative;
+}
+
+
+@media (max-width: 767px) { 
+    .fixed-top{
+        background: rgb(67, 95, 93);//#32605C;   
+    }
+}
+
+.container-menus-footer {
+    .nav-link {
+        padding: 0.3rem 0.5em;
+    }
+}
